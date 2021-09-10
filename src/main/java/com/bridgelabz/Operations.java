@@ -52,11 +52,20 @@ public class Operations {
 
 
 
-    public static void insertAfterSearchNode() {
+    public static LinkedList insertAfterSearchNode() {
         LinkedList linkedList = addDataAtStart();
         Node newNode = new Node(40);
         Node previousNode = linkedList.searchNodeAt(30, newNode);
         System.out.println("Before");
+        linkedList.print();
+        return linkedList;
+    }
+
+    public static void deleteAfterNodeAfterSearchNode() {
+        System.out.println("Before");
+        LinkedList linkedList = insertAfterSearchNode();
+        System.out.println("after");
+        linkedList.deleteANode(40);
         linkedList.print();
     }
 }
