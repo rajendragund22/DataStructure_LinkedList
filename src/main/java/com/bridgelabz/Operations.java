@@ -37,11 +37,16 @@ public class Operations {
         linkedList.pop();
         linkedList.print();
     }
+
     public static void deleteLastNode() {
         LinkedList linkedList = addDataAtStart();
         linkedList.popLast();
         linkedList.print();
 
+    }
 
+    public static void findNodeBasedOnValue() {
+        LinkedList linkedList = addDataAtStart();
+        linkedList.searchNode(30);
     }
 }
